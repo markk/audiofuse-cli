@@ -114,6 +114,7 @@ class AudioFuse:
                 return
 
         restart = False
+        to_adat = False
         # Restart when we would be switching from no ADAT I/O to some ADAT I/O
         # or from some ADAT I/O to no ADAT I/O.
         if val == Input.ADAT and self.input != Input.ADAT and self.output != Output.ADAT:
@@ -157,6 +158,7 @@ class AudioFuse:
                 return
 
         restart = False
+        to_adat = False
         # Restart when we would be switching from no ADAT I/O to some ADAT I/O
         # or from some ADAT I/O to no ADAT I/O.
         if val == Output.ADAT and self.output != Output.ADAT and self.input != Input.ADAT:
