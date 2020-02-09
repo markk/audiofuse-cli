@@ -16,6 +16,7 @@ Input = Enum(value='Input', names=[
     ('spdif-coax', 1),
     ('SPDIF_optical', 2),
     ('SPDIF-optical', 2),
+    ('spdif-optical', 2),
     ('ADAT', 3),
     ('adat', 3),
     ('WClock', 4),
